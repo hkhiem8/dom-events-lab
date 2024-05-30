@@ -1,0 +1,72 @@
+// HTML NOTES
+id - calculator (div.row x 4)
+    // rows -> buttons (div) 
+            -> div.button -> .number (9) or .operator (/)
+                // might need to use classList.contains (determine what I clicked)
+    // rows(4) -> number, operator, equals 
+
+
+// USER STORIES 
+
+// general goal
+1. As a user, I want to be able to select numbers so that I can perform operations with them. ( querySelector + document.addEventListener()
+
+// features for operations - eval ()
+As a user, I want to be able to add two numbers together. 
+
+// render function 
+As a user, I want to be able to see the output of the mathematical operation.
+
+ICEBOX 
+// operation functions
+As a user, I want to be able to subtract one number from another.
+
+As a user, I want to be able to multiply two numbers together.
+
+As a user, I want to be able to divide one number by another.
+
+// FUNCTION NOTES - 
+
+// reset function
+As a user, I want to be able to clear all operations and start from 0.
+
+// calculator logic 
+// constants ? complex data [] {} ? - TBD
+
+// variables 
+    num1 = Number(button text)
+    num2 = Number(button text)
+    operator - example "+", "-", "/", "*"
+    result = example - "3.14"
+
+// dom elements -
+    buttons 
+        div.number
+        div.operator
+        div.equal
+    result - .display
+
+// event handler - 
+    click handler for each group of elements 
+    // functionality will be tied to its button type
+    
+
+// JS calculation gotchas - strings when added together turn into longer strings. 
+// To add two strings together (as numbers) you need to convert them to numbers
+
+let num1 = Number('12345')
+let num2 = Number('6789')
+
+let op = "+"
+
+let output =""
+
+num1+num2
+
+function add(num1, num2){
+  return num1+num2
+}
+
+if (op === "+"){
+  output = add(num1, num2)
+}
